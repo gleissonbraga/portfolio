@@ -243,8 +243,7 @@ header li {
 .about-content {
     height: 45vh;
     width: 90%;
-
-    padding: 20px;
+    
     display: flex;
     justify-content: center;
     align-items: center;
