@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+:root {
+    --cor0: #1B1A17;
+    --cor01:#1F1E1B;
+    --cor02:#A35709;
+    --cor04:#FF8303;
+    --cor05:#F0E3CA;
+    --cor06:#3a3939dc;
+    --cor07: rgb(207, 106, 59);
+
+    --fonte-padrao: 'Inconsolata', cursive;
+    --fonte-logo: 'Anton', regular;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--fonte-padrao);
+    color: var(--cor05);
+    flex-wrap: wrap;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 60px;
+    padding-right: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: var(--cor0);
+}
+
+header li {
+    list-style: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 0px 20px 0px 20px;
+    cursor: pointer;
+}
+
+.links-navegação a {
+    text-decoration: none;
+    padding: 4px 4px;
+}
+
+.links-navegação a:hover {
+    color: var(--cor04);
+    transition: 0.5s;
+    border-radius: 4px;
+    background-color: rgba(204, 200, 200, 0.61);
+}
+
+#navegação h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+#navegação h3 a {
+    text-decoration: none;
+}
+
+#navegação h3 span {
+    color: var(--cor04);
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;   
+    font-size: 35px;
+}
+
+#person {
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    background-color: black;
+}
+
+.person-content {
+    height: 100%;
+    width: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+    background-color: black;
+}
+
+.person-content div h1 {
+    padding: 0px 4px;
+    font-size: 3.5em;
+    line-height: 6rem;
+}
+
+.person-content div h2 {
+    padding: 0px 4px;
+    font-size: 2.75em;
+}
+
+.person-name {
+    margin-top: 11rem;
+}
+
+.stacks-content {
+    display: flex;
+    justify-content: center;
+
+    flex-direction: column;
+    margin-top: 6rem;
+    
+}
+
+.stacks-content h3 {
+    font-size: 1em;
+    margin-left: 20px;
+
+
+}
+
+.stacks {
+    display: flex;
+
+    align-items: center;
+
+    flex-direction: row;
+}
+
+.stacks ul li {
+    display: flex;
+    align-items: center;
+
+    position: relative;
+
+    margin: 10px;
+    padding: 10px;
+
+    list-style: none;
+}
+
+.stacks ul li img {
+    width: 30px;
+    height: auto;
+
+    transition: transform .3s ease;
+}
+
+.stacks ul li img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.stacks ul li div:hover::after {
+    content: attr(data);
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    
+
+    width: 20px;
+    height: 20px;
+
+    color: var(--cor05);
+}
+
+.person-background {
+    height: 100vh;
+    width: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+
+    background-image: url(imagens/img-fundo.jpg);
+    background-size: cover;
+    background-position: top center;
+}
+
+.person-background::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    height: 100%;
+    width: 100%;
+
+
+}
+
+.wrapper-profile-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 14px;
+    margin: 20px 15px;
+
+    border-radius: 50%;
+    background: radial-gradient(rgba(0,0,0,0.15) 60%, transparent 0),
+    radial-gradient(#000 68%, transparent 0),
+    linear-gradient( to top right, #fda500 0%, #ff1493 100%);
+}
+.profile-photo {
+    width: 320px;
+    height: auto;
+    border-radius: 70%;
+}
+
+.links a img {
+    width: 30px;
+    height: 30px;
+    margin: 20px 5px;
+    filter: brightness(.8);
+    transition: all .3s ease;
+}
+
+.links a img:hover {
+    transform: scale(1);
+    filter: brightness(1);
+}
+
+.about-me {
+    height: 50vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--cor0);
+}
+
+.about-content {
+    height: 45vh;
+    width: 90%;
+
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    text-align: justify;
+
+    border-radius: 5px;
+    border: solid 2px var(--cor05);
+}
+
+.about-content div h2 {
+    padding: 5px;
+    margin-bottom: 2px;
+}
+
+.about-content h3 p {
+    padding: 5px;
+    margin: 2px;
+}
+
+.button-cta button {
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: solid 2px var(--cor05);
+    background-color: rgba(204, 200, 200, 0.61);
+
+}
+
+.button-cta button a {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.button-cta button a:hover {
+    color: var(--cor04);
+    text-decoration: underline;
+}
+
+.about-content h3 p {
+    text-align: center;
+}
+
+.about-content h4 {
+    padding: 2px;
+    margin: 4px;
+    display: block;
+}
+
+.about-tittle h2 {
+    height: 10vh;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.about-text {
+    height: 10vh;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.projects {
+    height: 50vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--cor0);
+}
+
+.project-content {
+    height: 45vh;
+    width: 90%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: black;
+    border-radius: 5px;
+    border: solid 2px var(--cor05);
+}
+
+
+.project-um {
+    height: 30vh;
+    width: 15%;
+    background-image: url();
+    background-size: cover;
+    background-position: top center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 40px;
+
+    border-radius: 10px;
+    border: solid 1px var(--cor05);
+}
+
+.project-dois {
+    height: 30vh;
+    width: 15%;
+    background-color: #ff1493;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 40px;
+}
+
+.project-tres {
+
+    height: 30vh;
+    width: 15%;
+    background-color: #ff8614;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 40px;
+}
+
+.link-project {
+    padding: 2px;
+    margin: 10px;    
+}
+
+.link-project a {
+    color: #000;
+}
