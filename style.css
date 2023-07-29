@@ -270,13 +270,13 @@ header li {
     padding: 10px;
     border-radius: 10px;
     border: solid 2px var(--cor05);
-    background-color: rgba(204, 200, 200, 0.61);
+    background-color: transparent;
 
 }
 
 .button-cta button a {
     text-decoration: none;
-    color: #000;
+    color: white;
     font-size: 20px;
     font-weight: bold;
 }
@@ -342,36 +342,64 @@ header li {
 .project-um {
     height: 30vh;
     width: 15%;
-    background-image: url(imagens/kenzie_blog_como-aprender-a-programar.webp);
+
+    background-image: url(imagens/android-11-go.jpg);
     background-size: cover;
     background-position: top center;
+    
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin-right: 40px;
 
-    border-radius: 10px;
-    border: solid 1px var(--cor05);
+
+
+}
+
+.project-um h4 {
+    margin: 5px 0px;
+    color: black;
+    font-size: 30px;
+}
+
+.project-um p {
+    color: black;
 }
 
 .project-dois {
     height: 30vh;
     width: 15%;
-    background-color: #ff1493;
+
+    background-color: #FF8303;
+    background-size: cover;
+    background-position: top center;
 
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin-right: 40px;
+}
+
+.project-dois h4 {
+    margin: 5px 0px;
+    color: black;
+    font-size: 30px;
+}
+
+.project-dois p {
+    color: black;
 }
 
 .project-tres {
 
     height: 30vh;
     width: 15%;
-    background-color: #ff8614;
+
+    background-color: #FF8303;
+    background-size: cover;
+    background-position: top center;
 
     display: flex;
     justify-content: center;
@@ -380,11 +408,53 @@ header li {
     margin-right: 40px;
 }
 
+.project-tres h4 {
+    margin: 5px 0px;
+    color: black;
+    font-size: 30px;
+}
+
+.project-tres p {
+    color: black;
+}
+
 .link-project {
     padding: 2px;
-    margin: 10px;    
+    margin: 5px;
+    background-color: transparent;
+    font-size: 15px;
+    border-radius: 10px;
+    padding: 5px 5px;
 }
 
 .link-project a {
-    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.link-project a:hover {
+    color: var(--cor04);
+    text-decoration: underline;
+}
+
+
+.repositório {
+    padding: 2px;
+    margin: 5px;
+    background-color: transparent;
+    font-size: 15px;
+    border-radius: 10px;
+    padding: 5px 5px;
+}
+
+.repositório a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.repositório a:hover {
+    color: var(--cor04);
+    text-decoration: underline;
 }
