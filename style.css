@@ -343,7 +343,7 @@ header li {
 .project-um {
     height: 30vh;
     width: 15%;
-    background-image: url();
+    background-image: url(imagens/kenzie_blog_como-aprender-a-programar.webp);
     background-size: cover;
     background-position: top center;
     display: flex;
